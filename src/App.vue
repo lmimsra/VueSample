@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <!--<HelloWorld msg="Welcome to Your Vue.js App"/>-->
+    <MyHeader></MyHeader>
     <p v-if="msg.length > 0">{{msg}}</p>
     <p v-else>no text</p>
     <label for="in_text">入力</label>
@@ -11,8 +12,12 @@
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
+import MyHeader from './components/header';
 
 export default {
+    components:{
+      MyHeader
+    },
     data(){
         return{
             msg:"Hello World"
