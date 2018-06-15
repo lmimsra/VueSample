@@ -1,12 +1,12 @@
 <template>
-    <div id="header">
-        ヘッダーだよー
+    <div id="MyHeader">
+        <img id="icon-image" src="../assets/logo.png">
     </div>
 </template>
 
 <script>
     export default {
-        name: "header"
+        name: "MyHeader"
     }
 </script>
 

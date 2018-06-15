@@ -3,10 +3,9 @@
         <MyHeader></MyHeader>
         <p v-if="msg.length > 0">{{msg}}</p>
         <p v-else>no text</p>
-        <label for="in_text">入力</label>
-        <input id="in_text" placeholder="input here" type="text" v-model="msg"/>
+        <p>入力<input id="in_text" placeholder="input here" type="text" v-model="msg"/>
         <button @click="clear()">clear</button>
-
+        </p>
         <input type="checkbox" id="label1" class="cssacc" />
         <label for="label1">Vueの基本</label>
         <div class="accshow">
@@ -15,28 +14,49 @@
         <!--//ラベル1-->
         <!--ラベル2-->
         <input type="checkbox" id="label2" class="cssacc" />
-        <label for="label2">Photoshop</label>
+        <label for="label2">イベント処理</label>
         <div class="accshow">
             <!--ここに隠す中身-->
         </div>
         <!--//ラベル2-->
         <!--ラベル3-->
         <input type="checkbox" id="label3" class="cssacc" />
-        <label for="label3">WordPress</label>
+        <label for="label3">フォーム開発</label>
         <div class="accshow">
             <!--ここに隠す中身-->
         </div>
         <!--//ラベル3-->
         <!--ラベル4-->
         <input type="checkbox" id="label4" class="cssacc" />
-        <label for="label4">Material Design</label>
+        <label for="label4">条件分岐とループ</label>
         <div class="accshow">
             <!--ここに隠す中身-->
         </div>
         <!--//ラベル4-->
         <!--ラベル5-->
         <input type="checkbox" id="label5" class="cssacc" />
-        <label for="label5">Design Tips</label>
+        <label for="label5">moreデータバインディング</label>
+        <div class="accshow">
+            <!--ここに隠す中身-->
+        </div>
+        <!--//ラベル5-->
+        <!--ラベル5-->
+        <input type="checkbox" id="label6" class="cssacc" />
+        <label for="label6">コンポーネント</label>
+        <div class="accshow">
+            <!--ここに隠す中身-->
+        </div>
+        <!--//ラベル5-->
+        <!--ラベル5-->
+        <input type="checkbox" id="label7" class="cssacc" />
+        <label for="label7">ディレクティブ/フィルター/プラグイン</label>
+        <div class="accshow">
+            <!--ここに隠す中身-->
+        </div>
+        <!--//ラベル5-->
+        <!--ラベル5-->
+        <input type="checkbox" id="label8" class="cssacc" />
+        <label for="label8">ルーティング</label>
         <div class="accshow">
             <!--ここに隠す中身-->
         </div>
@@ -46,7 +66,7 @@
 
 <script>
     // import HelloWorld from './components/HelloWorld.vue'
-    import MyHeader from './components/header';
+    import MyHeader from './components/MyHeader';
     import Lesson2 from './components/Lpart2';
 
     export default {
@@ -57,7 +77,7 @@
         },
         data() {
             return {
-                msg: "Hello World"
+                msg: "Hello Vue.js"
             }
         },
         methods: {
@@ -134,7 +154,7 @@
     .cssacc:checked + label + .accshow {
         height: auto;
         padding: 5px;
-        background: #dbffd7;
+        background: #f5ffef;
         opacity: 1;
     }
 
