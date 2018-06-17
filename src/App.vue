@@ -125,7 +125,7 @@
 
     /*アイコンを表示*/
     .accbox label:before {
-        content: '\f054';
+        /*content: '\f054';*/
         font-family: 'FontAwesome';
         padding-right: 8px;
     }
@@ -163,6 +163,6 @@
 
     /*アイコンを入れ替える*/
     .cssacc:checked + label:before {
-        content: '\f078';
+        /*content: '\f078';*/
     }
 </style>
