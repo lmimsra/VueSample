@@ -16,7 +16,7 @@
         <input type="checkbox" id="label2" class="cssacc" />
         <label for="label2">イベント処理</label>
         <div class="accshow">
-            <!--ここに隠す中身-->
+            <Lesson3></Lesson3>
         </div>
         <!--//ラベル2-->
         <!--ラベル3-->
@@ -68,11 +68,13 @@
     // import HelloWorld from './components/HelloWorld.vue'
     import MyHeader from './components/MyHeader';
     import Lesson2 from './components/Lpart2';
+    import Lesson3 from './components/Lpart3';
 
     export default {
         components: {
             MyHeader,
-            Lesson2
+            Lesson2,
+            Lesson3
 
         },
         data() {
