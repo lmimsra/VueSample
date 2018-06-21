@@ -7,56 +7,57 @@
         <button @click="clear()">clear</button>
         </p>
         <input type="checkbox" id="label1" class="cssacc" />
-        <label for="label1">Vueの基本</label>
+        <label class="menu-label" for="label1">Vueの基本</label>
         <div class="accshow">
             <Lesson2></Lesson2>
         </div>
         <!--//ラベル1-->
         <!--ラベル2-->
         <input type="checkbox" id="label2" class="cssacc" />
-        <label for="label2">イベント処理</label>
+        <label class="menu-label" for="label2">イベント処理</label>
         <div class="accshow">
             <Lesson3></Lesson3>
         </div>
         <!--//ラベル2-->
         <!--ラベル3-->
         <input type="checkbox" id="label3" class="cssacc" />
-        <label for="label3">フォーム開発</label>
+        <label class="menu-label" for="label3">フォーム開発</label>
         <div class="accshow">
             <!--ここに隠す中身-->
+            <Lesson4></Lesson4>
         </div>
         <!--//ラベル3-->
         <!--ラベル4-->
         <input type="checkbox" id="label4" class="cssacc" />
-        <label for="label4">条件分岐とループ</label>
+        <label class="menu-label" for="label4">条件分岐とループ</label>
         <div class="accshow">
             <!--ここに隠す中身-->
         </div>
         <!--//ラベル4-->
         <!--ラベル5-->
         <input type="checkbox" id="label5" class="cssacc" />
-        <label for="label5">moreデータバインディング</label>
+        <label class="menu-label" for="label5">moreデータバインディング</label>
         <div class="accshow">
             <!--ここに隠す中身-->
         </div>
         <!--//ラベル5-->
         <!--ラベル5-->
         <input type="checkbox" id="label6" class="cssacc" />
-        <label for="label6">コンポーネント</label>
+        <label class="menu-label" for="label6">コンポーネント</label>
         <div class="accshow">
             <!--ここに隠す中身-->
         </div>
         <!--//ラベル5-->
         <!--ラベル5-->
         <input type="checkbox" id="label7" class="cssacc" />
-        <label for="label7">ディレクティブ/フィルター/プラグイン</label>
+        <label class="menu-label" for="label7">ディレクティブ/フィルター/プラグイン</label>
         <div class="accshow">
             <!--ここに隠す中身-->
         </div>
         <!--//ラベル5-->
         <!--ラベル5-->
         <input type="checkbox" id="label8" class="cssacc" />
-        <label for="label8">ルーティング</label>
+        <label class="menu-label" for="label8">ルーティング</label>
         <div class="accshow">
             <!--ここに隠す中身-->
         </div>
@@ -69,12 +70,14 @@
     import MyHeader from './components/MyHeader';
     import Lesson2 from './components/Lpart2';
     import Lesson3 from './components/Lpart3';
+    import Lesson4 from './components/Lpart4';
 
     export default {
         components: {
             MyHeader,
             Lesson2,
-            Lesson3
+            Lesson3,
+            Lesson4
 
         },
         data() {
@@ -114,7 +117,7 @@
     }
 
     /*ラベル*/
-    .accbox label {
+    .accbox .menu-label {
         display: block;
         margin: 1.5px 0;
         padding : 13px 12px;
@@ -126,14 +129,14 @@
     }
 
     /*アイコンを表示*/
-    .accbox label:before {
+    .accbox .menu-label:before {
         /*content: '\f054';*/
         font-family: 'FontAwesome';
         padding-right: 8px;
     }
 
     /*ラベルホバー時*/
-    .accbox label:hover {
+    .accbox .menu-label:hover {
         background : #2f9160;
         color: aliceblue;
     }
@@ -153,7 +156,7 @@
     }
 
     /*クリックで中身表示*/
-    .cssacc:checked + label + .accshow {
+    .cssacc:checked + .menu-label + .accshow {
         height: auto;
         padding: 5px;
         background: #f5ffef;
@@ -164,7 +167,7 @@
         margin: 15px 10px}
 
     /*アイコンを入れ替える*/
-    .cssacc:checked + label:before {
+    .cssacc:checked + .menu-label:before {
         /*content: '\f078';*/
     }
 </style>
