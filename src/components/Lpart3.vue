@@ -11,7 +11,7 @@
         <p>name->{{name}}</p>
         <button @click="getEvent('こんにちは',$event)">イベントを送る</button><br/>
         <textarea @keyup.alt.72="help" id="message" v-model="msg"></textarea><br/>
-        <button @click.left="click2">クリック！</button>
+        <button @click.left.exact="click2">クリック！</button>
 
     </div>
 </template>
