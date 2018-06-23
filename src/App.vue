@@ -9,59 +9,54 @@
         <input type="checkbox" id="label1" class="cssacc" />
         <label class="menu-label" for="label1">Vueの基本</label>
         <div class="accshow">
+            <p>Lpart2.vue</p>
             <Lesson2></Lesson2>
         </div>
-        <!--//ラベル1-->
-        <!--ラベル2-->
+
         <input type="checkbox" id="label2" class="cssacc" />
         <label class="menu-label" for="label2">イベント処理</label>
         <div class="accshow">
+            <p>Lpart3.vue</p>
             <Lesson3></Lesson3>
         </div>
-        <!--//ラベル2-->
-        <!--ラベル3-->
+
         <input type="checkbox" id="label3" class="cssacc" />
         <label class="menu-label" for="label3">フォーム開発</label>
         <div class="accshow">
-            <!--ここに隠す中身-->
+            <p>Lpart4.vue</p>
             <Lesson4></Lesson4>
         </div>
-        <!--//ラベル3-->
-        <!--ラベル4-->
+
         <input type="checkbox" id="label4" class="cssacc" />
         <label class="menu-label" for="label4">条件分岐とループ</label>
         <div class="accshow">
-            <!--ここに隠す中身-->
+            <p>Lpart5.vue</p>
         </div>
-        <!--//ラベル4-->
-        <!--ラベル5-->
+
         <input type="checkbox" id="label5" class="cssacc" />
         <label class="menu-label" for="label5">moreデータバインディング</label>
         <div class="accshow">
             <!--ここに隠す中身-->
         </div>
-        <!--//ラベル5-->
-        <!--ラベル5-->
+
         <input type="checkbox" id="label6" class="cssacc" />
         <label class="menu-label" for="label6">コンポーネント</label>
         <div class="accshow">
             <!--ここに隠す中身-->
         </div>
-        <!--//ラベル5-->
-        <!--ラベル5-->
+
         <input type="checkbox" id="label7" class="cssacc" />
         <label class="menu-label" for="label7">ディレクティブ/フィルター/プラグイン</label>
         <div class="accshow">
             <!--ここに隠す中身-->
         </div>
-        <!--//ラベル5-->
-        <!--ラベル5-->
+
         <input type="checkbox" id="label8" class="cssacc" />
         <label class="menu-label" for="label8">ルーティング</label>
         <div class="accshow">
             <!--ここに隠す中身-->
         </div>
-        <!--//ラベル5-->
+
     </div>
 </template>
 
@@ -92,11 +87,6 @@
         }
 
 
-
-        // name: 'app',
-        // components: {
-        //   HelloWorld
-        // }
     }
 </script>
 
