@@ -6,6 +6,7 @@
         <p>入力<input id="in_text" placeholder="input here" type="text" v-model="msg"/>
         <button @click="clear()">clear</button>
         </p>
+        <p>ソースコードは<a href="https://github.com/lmimsra/VueSample">コチラ</a></p>
         <input type="checkbox" id="label1" class="cssacc" />
         <label class="menu-label" for="label1">Vueの基本</label>
         <div class="accshow">
