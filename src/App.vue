@@ -32,6 +32,7 @@
         <label class="menu-label" for="label4">条件分岐とループ</label>
         <div class="accshow">
             <p>Lpart5.vue</p>
+            <Lesson5></Lesson5>
         </div>
 
         <input type="checkbox" id="label5" class="cssacc" />
@@ -67,13 +68,15 @@
     import Lesson2 from './components/Lpart2';
     import Lesson3 from './components/Lpart3';
     import Lesson4 from './components/Lpart4';
+    import Lesson5 from './components/Lpart5';
 
     export default {
         components: {
             MyHeader,
             Lesson2,
             Lesson3,
-            Lesson4
+            Lesson4,
+            Lesson5,
 
         },
         data() {
