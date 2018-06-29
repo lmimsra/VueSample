@@ -49,7 +49,28 @@
         <ul v-for="(member,key) in members" :key="member">
             <li>{{key}}：{{member}}</li>
         </ul>
-        <strong></strong>
+        <strong>v-for number</strong><br/>
+        <span v-for="i in 5" :key="i">{{i+","}}</span><br/>
+        <strong>v-for filter</strong>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>ISBN</th>
+                <th>書名</th>
+                <th>価格</th>
+            </tr>
+            <tr v-for="(book,index) in filterBook" :key="book">
+                <td>{{index+1}}</td>
+                <td>{{book.isbn}}</td>
+                <td>{{book.title}}</td>
+                <td>{{book.price}}</td>
+            </tr>
+        </table>
+        <strong>v-for change</strong><br/>
+        <input type="button" value="変更" @click="changeArray"/>
+        <ul>
+            <li v-for="item in list" :key="item">{{item}}</li>
+        </ul>
     </div>
 </template>
 
@@ -83,7 +104,24 @@
                     age: 12,
                     mail: 'examplesasa@assff.com'
                 },
+                list: ["aaaaa", "bbbbb", "ccccc"],
 
+
+            }
+        },
+        computed: {
+            //価格が5000未満の書籍だけを表示
+            filterBook: function () {
+                return this.books.filter(function (book) {
+                    return book.price < 5000;
+                })
+            }
+        },
+        methods:{
+            changeArray:function () {
+                // this.list[1]="ddddd";
+                //これじゃないと反映されない
+                this.list.splice(1,1,"ddddd");
             }
         }
     }
