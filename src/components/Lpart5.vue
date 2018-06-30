@@ -30,7 +30,7 @@
         <p v-show="toggle_show">
             指定された条件式がtrueの時にだけdisplay:none が解除されます
         </p>
-        <strong>v-for</strong>
+        <br/><strong>v-for</strong>
         <table>
             <tr>
                 <th>ID</th>
@@ -75,6 +75,7 @@
 </template>
 
 <script>
+    /* eslint-disable vue/require-v-for-key */
     export default {
         name: "Lpart5",
         data() {
