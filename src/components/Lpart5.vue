@@ -117,11 +117,11 @@
                 })
             }
         },
-        methods:{
-            changeArray:function () {
+        methods: {
+            changeArray: function () {
                 // this.list[1]="ddddd";
                 //これじゃないと反映されない
-                this.list.splice(1,1,"ddddd");
+                this.list.splice(1, 1, "ddddd");
             }
         }
     }
