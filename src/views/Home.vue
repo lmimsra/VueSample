@@ -11,34 +11,34 @@
         <label class="menu-label" for="label1">Vueの基本</label>
         <div class="accshow">
             <p>Lpart2.vue</p>
-            <Lesson2></Lesson2>
+            <Lesson2/>
         </div>
 
         <input type="checkbox" id="label2" class="cssacc"/>
         <label class="menu-label" for="label2">イベント処理</label>
         <div class="accshow">
             <p>Lpart3.vue</p>
-            <Lesson3></Lesson3>
+            <Lesson3/>
         </div>
 
         <input type="checkbox" id="label3" class="cssacc"/>
         <label class="menu-label" for="label3">フォーム開発</label>
         <div class="accshow">
             <p>Lpart4.vue</p>
-            <Lesson4></Lesson4>
+            <Lesson4/>
         </div>
 
         <input type="checkbox" id="label4" class="cssacc"/>
         <label class="menu-label" for="label4">条件分岐とループ</label>
         <div class="accshow">
             <p>Lpart5.vue</p>
-            <Lesson5></Lesson5>
+            <Lesson5/>
         </div>
         <input type="checkbox" id="label5" class="cssacc"/>
         <label class="menu-label" for="label5">moreデータバインディング</label>
         <div class="accshow">
             <p>Lpart6.vue</p>
-            <Lesson6></Lesson6>
+            <Lesson6/>
         </div>
 
         <input type="checkbox" id="label6" class="cssacc"/>
