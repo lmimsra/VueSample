@@ -8,6 +8,12 @@
         <input type="text" id="name" v-model="name"/>
         <p v-once>{{name}}</p>
         <p>{{name}}</p>
+        <strong>Styleバインディング</strong>
+        <p v-bind:style="{backgroundColor:'blue',fontSize:'1.5em',color:'white'}">{{message}}</p>
+        <strong>classバインディング</strong>
+         <p v-bind:class="{color:true,frame:isChange}">{{message}}</p>
+        <strong>v-cloak</strong>
+        <p v-cloak>{{message}}</p>
     </div>
 </template>
 
@@ -21,12 +27,19 @@
                     maxLength: 15,
                     required: true,
                 },
-                name:'ゲスト'
+                name:'ゲスト',
+                message: 'コンニチハ',
+                isChange:true
             }
         }
     }
 </script>
 
 <style scoped>
-
+.color{
+    color: #2c3e50;
+}
+    .fra{
+        background-color: #bdffb2;
+    }
 </style>
