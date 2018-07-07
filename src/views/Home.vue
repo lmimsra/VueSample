@@ -44,7 +44,10 @@
         <input type="checkbox" id="label6" class="cssacc"/>
         <label class="menu-label" for="label6">コンポーネント</label>
         <div class="accshow">
-            <!--ここに隠す中身-->
+            <p>Lpart7.vue</p>
+            <Lesson7 v-bind:count=3 >
+                <p slot="title">スロットを使用した</p>
+            </Lesson7>
         </div>
 
         <input type="checkbox" id="label7" class="cssacc"/>
@@ -69,6 +72,7 @@
     import Lesson4 from '../components/Lpart4';
     import Lesson5 from '../components/Lpart5';
     import Lesson6 from '../components/Lpart6';
+    import Lesson7 from '../components/Lpart7';
 
     export default {
         components: {
@@ -78,11 +82,13 @@
             Lesson4,
             Lesson5,
             Lesson6,
+            Lesson7,
 
         },
         data() {
             return {
-                msg: "Hello Vue.js"
+                msg: "Hello Vue.js",
+                number:2
             }
         },
         methods: {
