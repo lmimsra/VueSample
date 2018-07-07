@@ -12,7 +12,7 @@
         <p v-bind:style="{backgroundColor:'blue',fontSize:'1.5em',color:'white'}">{{message}}</p>
         <strong>classバインディング</strong>
          <p v-bind:class="{color:true,frame:isChange}">{{message}}</p>
-        <strong>v-cloak</strong>
+        <strong>v-cloak(画面のチラつき防止)</strong>
         <p v-cloak>{{message}}</p>
     </div>
 </template>
@@ -36,10 +36,10 @@
 </script>
 
 <style scoped>
-.color{
-    color: #2c3e50;
-}
-    .fra{
+    .color{
+        color: #2c3e50;
+    }
+    .frame{
         background-color: #bdffb2;
     }
 </style>
